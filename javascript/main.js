@@ -1,3 +1,4 @@
+//Funcion para el modo oscuro
 let toggle=document.getElementById('toggle');
 let label_toggle=document.getElementById('label_toggle');
 toggle.addEventListener('change',(event) =>{
@@ -9,3 +10,17 @@ toggle.addEventListener('change',(event) =>{
         label_toggle.innerHTML='<img src="images/assets/light-off.svg">';
     }
 })
+
+//Funcion para que el header me siga en la web
+window.onscroll = function() {stickyHeader()};
+
+var header = document.getElementById("header");
+var sticky = header.offsetTop;
+
+function stickyHeader() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
