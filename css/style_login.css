@@ -13,9 +13,8 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(jovanilog.jpg);
+    background-image: url(images/jovanilog.jpg);
     margin-right: 30px;
-    
 }
 form{
     padding: 50px;
