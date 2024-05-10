@@ -13,7 +13,7 @@ body{
 
 /* Encabezado de la web */
 #header {
-  background-color: #333;
+  background-color: #1A5276;
   color: #fff;
   padding: 8px;
   position: fixed;
@@ -37,7 +37,7 @@ body{
 .item {
   list-style: none;
   text-transform: uppercase;
-  border-bottom: grey 5px solid;
+  border-bottom: #5499C7 5px solid;
   font-size: 15px;
   cursor: pointer;
   margin: 0px 7px;
@@ -46,7 +46,7 @@ body{
 }
 
 li:hover{
-  background: grey;
+  background: #5499C7;
 }
 
 /* Modo oscuro */
@@ -77,10 +77,10 @@ li:hover{
 /* Caja principal */
 .box_principal{
   /* border: pink 5px dashed; */
-  background: #292929;
   display: flex;
   align-items: center;
   flex-direction: column;
+  border-bottom: #2471A3 5px solid;
 }
 
 /* Titulo principal */
@@ -90,26 +90,26 @@ li:hover{
   justify-content: center;
   flex-direction: column;
   margin-top: 1rem;
-  line-height: 3rem;
+  line-height: 4rem;
 }
 
 /* Titulo parte de arriba principal */
 .title_up{
   text-align: center;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 /* Titulo parte de en medio principal */
 .title_mid{
   text-align: center;
   font-weight:bold;
-  font-size: 60px;
+  font-size: 90px;
 }
 
 /* Titulo parte de a bajo principal */
 .title_bot{
   text-align: center;
-  font-size: 15px;
+  font-size: 30px;
 }
 
 /* Animacion imagen de la flecha */
@@ -135,7 +135,7 @@ li:hover{
   justify-content: space-between;
   flex-direction: row;
   margin-top: 2rem;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .vinculo_yt{
@@ -159,16 +159,16 @@ li:hover{
 /* Imagen de los vinculos de Spotify y Youtube */
 .imagen_vinculo{
   margin-left: 5px;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 /* Video Principal "Mi Motora" */
 .video_principal iframe{
   margin-top: 1rem;
   margin-bottom: 2rem;
-  width: 400px;
-  height: 200px;
+  width: 600px;
+  height: 300px;
 }
 
 /* Caja linea del tiempo */
@@ -184,6 +184,7 @@ li:hover{
   font-size: 40px;
   text-align: center;
   margin: 2rem;
+  border-bottom: #2471A3 5px solid;
 }
 
 .timeline{
@@ -241,8 +242,8 @@ li:hover{
 /* Texto linea del tiempo */
 .text_timeline{
   padding: 20px 20px;
-  background: #f8f8f8;
-  color: #1e1e1e;
+  background: #1A5276;
+  color: #f8f8f8;
   position: relative;
   border-radius: 5px;
   font-size: 15px;
