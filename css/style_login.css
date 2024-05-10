@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(jovanilog.jpg);
+    margin-right: 30px;
+    
+}
+form{
+    padding: 50px;
+    flex-direction: column;
+    display: flex;
+    width: 400px;
+    box-shadow: 0 0 20px black;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.26);
+    
+
+}
+.Login{
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: rgb(17 252 0);
+}
+label, p{
+    font-size: 17px;
+    color: rgb(17 252 0);
+    margin-bottom: 10px;
+}
+input{
+    padding: 17px 17px;
+    border-radius: 25px;
+    border: 1px solid;
+    margin-bottom: 25px;
+    background-color: #b7b7d1;
+    outline: none;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+.btn-1{
+    background-color: rgb(68, 250, 55);
+    font-size: 17px;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn-1:hover{
+    background-color: rgb(66, 197, 57);
+}
+.recordar{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
