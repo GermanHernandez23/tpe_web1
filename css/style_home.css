@@ -1,0 +1,204 @@
+/* Configuraciones Generales */
+*{
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #333;
+  color: #fff;
+}
+
+/* Contenedor principal de la web */
+.conteiner{
+  display: grid;
+  min-height: 100vh;
+}
+
+/* Caja principal */
+.box_principal{
+  /* border: pink 5px dashed; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: #2471A3 5px solid;
+}
+
+/* Titulo principal */
+.titulo_principal{
+  /* border: blue 5px dashed; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 1rem;
+  line-height: 4rem;
+}
+
+/* Titulo parte de arriba principal */
+.title_up{
+  text-align: center;
+  font-size: 30px;
+}
+
+/* Titulo parte de en medio principal */
+.title_mid{
+  text-align: center;
+  font-weight:bold;
+  font-size: 90px;
+}
+
+/* Titulo parte de a bajo principal */
+.title_bot{
+  text-align: center;
+  font-size: 30px;
+}
+
+/* Animacion imagen de la flecha */
+.title_bot img{
+  animation: floatAnimation 3s infinite ease-in-out; /* Controla la velocidad y el tipo de animación */
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0); /* Inicia sin traslación vertical */
+  }
+  50% {
+    transform: translateY(-8px); /* Alcanza la máxima altura */
+  }
+  100% {
+    transform: translateY(0); /* Vuelve a la posición inicial */
+  }
+}
+
+/* Vinculos de Spotify y Youtube */
+.vinculos_principal{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 2rem;
+  font-size: 30px;
+}
+
+.vinculo_yt{
+  color: #8d0303;
+  text-decoration: none;
+}
+
+.vinculo_yt:hover{
+  color: #d30303;
+}
+
+.vinculo_sp{
+  color: green;
+  text-decoration: none;
+}
+
+.vinculo_sp:hover{
+  color: #03b603;
+}
+
+/* Imagen de los vinculos de Spotify y Youtube */
+.imagen_vinculo{
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+/* Video Principal "Mi Motora" */
+.video_principal iframe{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 600px;
+  height: 300px;
+}
+
+/* Responsive linea del tiempo */
+@media screen and (max-width: 600px){
+  .timeline{
+    margin: 50px auto;
+  }
+  
+  .timeline::after{
+    left: 31px;
+  }
+
+  .conteiner_timeline{
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+  }
+
+  .text_timeline{
+    font-size: 13px;
+  }
+
+  .text_timeline span{
+    margin-bottom: 10px;
+  }
+
+  .right_conteiner_tl{
+    left: 0;
+  }
+
+  .left_conteiner_tl_arrow, .right_conteiner_tl_arrow{
+    border-right: 15px solid grey;
+    border-left: 0;
+    left: -15px;
+  }
+}
+
+/* Responsive parte principal */
+/* @media only screen and (max-device-width : 360px) {
+
+  .navigation {
+    gap: 10px;
+  }
+
+  .item {
+    margin: 0px 10px;
+    padding: 10px;
+  }
+
+  li:hover{
+    background: grey;
+  }
+
+  .titulo_box1{
+    margin-top: 2rem;
+    line-height: 3rem;
+  }
+
+  .title_up_box1{
+    font-size: 20px;
+  }
+  
+  .title_mid_box1{
+    font-size: 50px;
+  }
+  
+  .title_bot_box1{
+    font-size: 15px;
+  }
+
+  .title_bot_box1 img{
+    width: 18px;
+    height: 18px;
+  }
+
+  .vinculos_box1{
+    font-size: 15px;
+  }
+
+  .imagen_vinculo{
+    width: 20px;
+    height: 20px;
+  }
+
+  .video_box1 iframe{
+    width: 300px;
+    height: 150px;
+  }
+
+} */

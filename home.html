@@ -6,29 +6,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-    <link href="css/style_principal.css" rel="stylesheet">
-    <title>Jovani Vazquez Web Oficial</title>
+    <link href="css/style_home.css" rel="stylesheet">
+    <link href="css/style_header.css" rel="stylesheet">
+    <link href="css/style_timeline_home.css" rel="stylesheet">
+    <title>Jovani Vazquez - It's My Time Out Now</title>
 </head>
 <body>
     <header id="header">
-        <div>
-            <div class="modo_osc">
-                <label for="toggle" id="label_toggle">
-                    <img src="images/assets/sun.svg" alt="Luz Encendida">
-                </label>
-                <input type="checkbox" id="toggle">
-            </div>
-        </div>
-        <div>
+        <div class="header_container">
+            <!-- Menú de navegación -->
             <ul class="navigation">
                 <li class="item">Inicio</li>
-                <li class="item">Musica</li>
+                <li class="item">Mi Música</li>
                 <li class="item">Tienda</li>
             </ul>
+            <!-- Contenedor del botón -->
+            <div>
+                <!-- Botón de redirección hacia login.html -->
+                <a id="button_user" class="button_user">
+                    <img src="images/assets/user_icon.svg" alt="Icono de usuario">
+                </a>
+            </div>
         </div>
     </header>
-    <div class="conteiner content_web">
-        <div class="conteiner">
+    <!-- Main Conteiner -->
+    <div class="container content_web">
+        <div class="container">
+            <!-- <div>
+                <input type="checkbox" id="toggle-checkbox" class="hidden-checkbox">
+                <label for="toggle-checkbox" id="toggle-label" class="hidden-label">
+                  <img src="images/assets/sun.svg" alt="Modo Claro" id="toggle-icon">
+                </label>
+            </div> -->
+            <!-- Caja donde se ubica la "Presentacion de la Web" -->
             <div class="box_principal">
                 <div class="titulo_principal">
                     <div class="title_up">
@@ -53,6 +63,7 @@
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
+            <!-- Caja donde se ubica la "Linea del Tiempo" -->
             <div class="box_timeline">
                 <div>
                     <h1 class="titulo_timeline">MI HISTORIA</h1>
@@ -106,6 +117,7 @@
             </div>
         </div>
     </div>
-<script src="javascript/main.js"></script>
+    <footer></footer>
+<script src="javascript/home.js"></script>
 </body>
 </html>

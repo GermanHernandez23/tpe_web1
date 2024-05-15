@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Caja linea del tiempo */
+.box_timeline{
+  /* border: green 5px dashed; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+  
+.titulo_timeline{
+  /* border: #8d0303 5px dashed; */
+  font-size: 40px;
+  text-align: center;
+  margin: 2rem;
+  border-bottom: #2471A3 5px solid;
+}
+  
+.timeline{
+  position: relative;
+  max-width: 1200px;
+  margin: 10px auto;
+}
+  
+/* Contenedor linea del tiempo */
+.conteiner_timeline{
+  padding: 10px 50px;
+  position: relative;
+  width: 50%;
+  /* background: rgba(0, 0, 0, 0.3); */
+  animation: movedown 1s linear forwards;
+  opacity: 0;
+}
+  
+/* Animacion contenedores linea del tiempo */
+@keyframes movedown{
+  0%{
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+  
+.conteiner_timeline:nth-child(1){
+  animation-delay: 0s;
+}
+  
+.conteiner_timeline:nth-child(2){
+  animation-delay: 1s;
+}
+  
+.conteiner_timeline:nth-child(3){
+  animation-delay: 2s;
+}
+  
+.conteiner_timeline:nth-child(4){
+  animation-delay: 3s;
+}
+  
+.conteiner_timeline:nth-child(5){
+  animation-delay: 4s;
+}
+  
+.conteiner_timeline:nth-child(6){
+  animation-delay: 5s;
+}
+  
+/* Texto linea del tiempo */
+.text_timeline{
+  padding: 20px 20px;
+  background: #1A5276;
+  color: #f8f8f8;
+  position: relative;
+  border-radius: 5px;
+  font-size: 15px;
+}
+  
+/* Contenedores izquierdos */
+.left_conteiner_tl{
+  left: 0;
+}
+  
+/* Contenedores derechos */
+.right_conteiner_tl{
+  left: 50%;
+}
+  
+.timeline::after{
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: #f8f8f8;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
+  animation: moveline 6s linear forwards;
+}
+  
+/* Animacion linea del tiempo */
+@keyframes moveline{
+  0%{
+    height: 0;
+  }
+  100%{
+    height: 100%;
+  }
+}
+  
+/* Titulo contenedor linea del tiempo */
+.text_timeline h2{
+  font-weight: 600;
+}
+  
+/* Texto interior linea del tiempo */
+.text_timeline span{
+  display: inline-block;
+  margin-bottom: 15px;
+}
+  
+/* Flechas de contenedores linea del tiempo */
+.left_conteiner_tl_arrow{
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid grey;
+  right: -15px;
+}
+  
+.right_conteiner_tl_arrow{
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid grey;
+  left: -15px;
+}
