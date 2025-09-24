@@ -1,0 +1,142 @@
+* {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  background-image:url("../images/patitas.jpg");
+  color: #ff9e07;
+  width: 100%;
+  overflow-x: hidden; 
+}
+
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff9e07;
+  padding: 10px;
+  border-radius: 50%;
+  border: #f8f8f8;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.back-to-top.show {
+  display: block;
+}
+.box_biografia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: #ff9e07 5px solid;
+}
+.texto_biografia {
+  flex: 1;
+  margin-right: 0px;
+  width: 100%;
+}
+.texto_biografia h2 {
+  color: #ffff;
+}
+.texto_biografia p {
+  margin-bottom: 10px;
+}
+
+.imagen_biografia {
+  flex: 1;
+  width: 100%;
+  margin-top: 20px;
+}
+.imagen_biografia img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+th{
+  background-color: #ff9e07;
+  color: #000000;
+  padding: 15px;
+}
+td {
+  border: 1px solid #aaa;
+  padding: 8px;
+  text-align: center;
+  background-color: #000000;
+  border: 1px solid #ff9e07;
+}
+footer {
+  margin-top: 5px;
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+ 
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* --- FORMULARIO DE REGISTRO --- */
+#form-rescate {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  background-color: #111;
+  padding: 20px;
+  border: 2px solid #ff9e07;
+  border-radius: 10px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#form-rescate input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 180px;
+  background-color: #222;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+#form-rescate input::placeholder {
+  color: #aaa;
+}
+
+#form-rescate button {
+  padding: 10px 20px;
+  background-color: #ff9e07;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #000;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}

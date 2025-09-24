@@ -1,62 +1,71 @@
 /* Configuraciones Generales */
-*{
-  font-family: 'Rubik', sans-serif;
+* {
+  font-family: "Rubik", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-body{
-  background-color: #333;
-  color: #fff;
+body,
+html {
+  background-image:url("../images/patitas.jpg");
+  color: #ff9e07;
+  width: 100%;
+  overflow-x: hidden;
+  
 }
 
 /* Contenedor principal de la web */
-.conteiner{
-  display: grid;
+.conteiner {
+  display: flex;
   min-height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Caja principal */
-.box_principal{
+.box_principal {
   /* border: pink 5px dashed; */
   display: flex;
   align-items: center;
   flex-direction: column;
-  border-bottom: #2471A3 5px solid;
+  background-color: #0000002f;
 }
 
 /* Titulo principal */
-.titulo_principal{
+.titulo_principal {
   /* border: blue 5px dashed; */
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin-top: 1rem;
-  line-height: 4rem;
+  line-height: 3rem;
 }
 
 /* Titulo parte de arriba principal */
-.title_up{
+.title_up {
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 /* Titulo parte de en medio principal */
-.title_mid{
+.title_mid {
   text-align: center;
-  font-weight:bold;
-  font-size: 90px;
+  font-weight: bold;
+  font-size: 60px;
 }
 
 /* Titulo parte de a bajo principal */
-.title_bot{
+.title_bot {
   text-align: center;
-  font-size: 30px;
+  font-size: 15px;
 }
 
 /* Animacion imagen de la flecha */
-.title_bot img{
+.title_bot img {
+  width: 15px;
+  height: 15px;
   animation: floatAnimation 3s infinite ease-in-out; /* Controla la velocidad y el tipo de animación */
 }
 
@@ -65,140 +74,393 @@ body{
     transform: translateY(0); /* Inicia sin traslación vertical */
   }
   50% {
-    transform: translateY(-8px); /* Alcanza la máxima altura */
+    transform: translateY(4px); /* Alcanza la máxima altura */
   }
   100% {
     transform: translateY(0); /* Vuelve a la posición inicial */
   }
 }
 
-/* Vinculos de Spotify y Youtube */
-.vinculos_principal{
+/* Vinculos de Facebook e Instagram */
+.vinculos_principal {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
-  margin-top: 2rem;
-  font-size: 30px;
+  flex-direction: column;
+  font-size: 15px;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
 }
 
-.vinculo_yt{
-  color: #8d0303;
+.vinculo_fb {
+  color: #00209b;
   text-decoration: none;
 }
 
-.vinculo_yt:hover{
-  color: #d30303;
+.vinculo_fb:hover {
+  color: #2248df;
 }
 
-.vinculo_sp{
-  color: green;
+.vinculo_ig {
+  color: #7b064b;
   text-decoration: none;
 }
 
-.vinculo_sp:hover{
-  color: #03b603;
+.vinculo_ig:hover {
+  color: #da278f;
 }
 
-/* Imagen de los vinculos de Spotify y Youtube */
-.imagen_vinculo{
+/* Imagen de los vinculos de Facebook e Instagram*/
+.imagen_vinculo {
   margin-left: 5px;
-  width: 30px;
-  height: 30px;
+  width: 15px;
+  height: 15px;
 }
 
-/* Video Principal "Mi Motora" */
-.video_principal iframe{
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  width: 600px;
-  height: 300px;
+.box_contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Responsive linea del tiempo */
-@media screen and (max-width: 600px){
-  .timeline{
-    margin: 50px auto;
-  }
+.titulo_contacto {
+  font-size: 30px;
+  text-align: center;
+  margin: 2rem;
+  text-decoration: underline #2272ff;
+}
+
+.conteiner_contacto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra contenido verticalmente dentro del contenedor */
+  align-items: center; /* Centra contenido horizontalmente dentro del contenedor */
+  width: 90%; /* Ajusta según tus necesidades, puede ser un porcentaje o un valor fijo */
+  max-width: 600px; /* Limita el ancho máximo */
+  margin: auto; /* Centra horizontalmente */
+  padding: 20px; /* Espacio interno */
+  background-color: #000000; /* Fondo */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  border-radius: 8px; /* Bordes redondeados */
   
-  .timeline::after{
-    left: 31px;
-  }
-
-  .conteiner_timeline{
-    width: 100%;
-    padding-left: 80px;
-    padding-right: 25px;
-  }
-
-  .text_timeline{
-    font-size: 13px;
-  }
-
-  .text_timeline span{
-    margin-bottom: 10px;
-  }
-
-  .right_conteiner_tl{
-    left: 0;
-  }
-
-  .left_conteiner_tl_arrow, .right_conteiner_tl_arrow{
-    border-right: 15px solid grey;
-    border-left: 0;
-    left: -15px;
-  }
+}
+.box_biografia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: #ff9e07 5px solid;
+}
+.texto_biografia {
+  flex: 1;
+  margin-right: 0px;
+  width: 100%;
+}
+.texto_biografia h2 {
+  color: #ffff;
+}
+.texto_biografia p {
+  margin-bottom: 10px;
 }
 
-/* Responsive parte principal */
-/* @media only screen and (max-device-width : 360px) {
+.imagen_biografia {
+  flex: 1;
+  width: 100%;
+  margin-top: 20px;
+}
+.imagen_biografia img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  max-width: 100%;
+}
 
-  .navigation {
-    gap: 10px;
+/*Estilo de la lista */
+.lista {
+  display: flex;
+  background-color: #004494;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+} /*estilo de los elementos de la lista */
+.lista li {
+  font-size: 20px;
+  padding: 3px;
+  margin: 10px;
+}
+a {
+  text-decoration: none;
+  color: #6daeff;
+}
+a:hover {
+  color: #2272ff;
+}
+.titulomedio {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+  padding: 10px;
+  font-size: 33px;
+}
+
+/* Estilos para el footer */
+footer {
+  margin-top: 5px;
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+ 
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff9e07;
+  padding: 10px;
+  border-radius: 50%;
+  border: #f8f8f8;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.back-to-top.show {
+  display: block;
+}
+
+
+.column {
+  flex-direction: column;
+  display: flex;
+  padding: 9px;
+  width: 400px;
+}
+.captcha-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+.captcha-image {
+  text-align: center;
+  width: 80%;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 3px solid #ff9e07;
+  font-size: 24px;
+  font-weight: bold;
+}
+.captchaInput{
+  margin: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ff9e07;
+  border-radius: 4px; /* Bordes redondeados */
+  font-size: 16px;
+}
+.verificar, .nuevo{
+  
+  padding: 7px;
+  border: none;
+  margin: 8px;
+  background-color: #ffffff;
+  border-radius: 4px; /* Bordes redondeados */
+  color: rgb(0, 0, 0);
+}
+.result{
+  text-align: center;
+}
+
+/* Responsive 1200px */
+@media only screen and (min-width: 1200px) {
+  .titulo_principal {
+    line-height: 4rem;
   }
 
-  .item {
-    margin: 0px 10px;
-    padding: 10px;
+  .title_up {
+    font-size: 30px;
   }
 
-  li:hover{
-    background: grey;
+  .title_mid {
+    font-size: 90px;
   }
 
-  .titulo_box1{
-    margin-top: 2rem;
+  .title_bot {
+    font-size: 30px;
+  }
+
+  .title_bot img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .vinculos_principal {
+    font-size: 30px;
+  }
+
+  .imagen_vinculo {
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+  }
+
+  
+}
+
+/* Responsive 1024px */
+@media only screen and (min-width: 1024px) {
+  .titulo_principal {
     line-height: 3rem;
   }
 
-  .title_up_box1{
-    font-size: 20px;
-  }
-  
-  .title_mid_box1{
-    font-size: 50px;
-  }
-  
-  .title_bot_box1{
-    font-size: 15px;
+  .title_up {
+    font-size: 30px;
   }
 
-  .title_bot_box1 img{
-    width: 18px;
-    height: 18px;
+  .title_mid {
+    font-size: 70px;
   }
 
-  .vinculos_box1{
-    font-size: 15px;
+  .title_bot {
+    font-size: 25px;
   }
 
-  .imagen_vinculo{
-    width: 20px;
-    height: 20px;
+  .title_bot img {
+    width: 25px;
+    height: 25px;
   }
 
-  .video_box1 iframe{
-    width: 300px;
-    height: 150px;
+  .vinculos_principal {
+    font-size: 25px;
   }
 
-} */
+  .imagen_vinculo {
+    margin-left: 5px;
+    width: 25px;
+    height: 25px;
+  }
+
+  .vinculos_principal {
+    justify-content: space-around;
+  }
+
+  .box_biografia {
+    max-width: 1000px;
+  }
+
+  .form_contacto {
+    max-width: 600px; /* Limita el ancho máximo del formulario */
+    margin: 0 auto 15px; /* Centra el formulario horizontalmente */
+  }
+
+  .submit_btn {
+    width: auto; /* Permite que el botón se ajuste a su contenido */
+    max-width: 200px; /* Limita el ancho máximo del botón */
+    margin: 0 auto; /* Centra el botón */
+  }
+
+  .notification {
+    padding: 10px 20px; /* Mantiene el padding */
+    font-size: 16px; /* Mantiene el tamaño de fuente */
+    max-width: 30%; /* Limita el ancho máximo en escritorios */
+  }
+}
+
+/* Responsive 768px */
+@media only screen and (min-width: 768px) {
+  .titulo_principal {
+    line-height: 3rem;
+  }
+
+  .title_up {
+    font-size: 30px;
+  }
+
+  .title_mid {
+    font-size: 70px;
+  }
+
+  .title_bot {
+    font-size: 25px;
+  }
+
+  .title_bot img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .vinculos_principal {
+    font-size: 25px;
+  }
+
+  .imagen_vinculo {
+    margin-left: 5px;
+    width: 25px;
+    height: 25px;
+  }
+
+
+  .box_biografia {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .texto_biografia {
+    flex: 2;
+    margin-right: 20px;
+  }
+
+  .imagen_biografia {
+    flex: 1;
+    margin-top: 0;
+  }
+
+  .form_contacto { 
+    flex-direction: column;
+    display: flex;
+    padding: 20px; /* Aumenta el padding para tabletas */
+    width: 100%;
+    align-items: center;
+  }
+
+  .submit_btn {
+    width: 100%; /* Permite que el botón se ajuste a su contenido */
+    
+  }
+
+  .notification {
+    padding: 10px 20px; /* Aumenta el padding para tabletas */
+    font-size: 16px; /* Tamaño de fuente más grande para tabletas */
+    max-width: 50%; /* Limita el ancho máximo en tabletas */
+  }
+  .form_contacto input,
+.form_contacto textarea {
+  width: 200%;
+  padding: 10px;
+  border: 1px solid #ff9e07;
+  border-radius: 4px; /* Bordes redondeados */
+  font-size: 16px;
+}
+}
+@media only screen and (max-width: 430px) {
+  .title_mid{
+    font-size: 40px;
+  }
+}

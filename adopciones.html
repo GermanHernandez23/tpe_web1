@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style_adopciones.css">
+    <link href="css/style_header.css" rel="stylesheet">
+    <title>MascoTandil</title>
+</head>
+<body>
+    <header>
+  <div class="header_container">
+    <!-- Botón hamburguesa -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Menú de navegación -->
+    <ul class="navigation" id="nav-menu">
+      <li class="items"><a id="button_home" class="item_inicio">Inicio</a></li>
+      <li class="items"><a id="button_adopcion" class="item_adopcion">Adopcion</a></li>
+      <li class="items"><a id="button_rescates" class="item_rescates">Rescates</a></li>
+    </ul>
+  </div>
+</header>
+
+    <br>
+        <h2 id="title_main">CONOCELOS</h2>
+        <h2 id="arrow_title_main">&#11015</h2>
+        <ul class="adopciones">
+           <li class="pets">
+                <img src="images/negro.jpeg">
+                <div>
+                    <h3>NEGRO</h3>
+                    <h4>6 AÑOS</h4><br>
+                    <h5>Ovejero Belga.</h5>
+                    <h5>Perezoso y Tranquilo.</h5>
+                </div>
+           </li> 
+           <li class="pets">
+                <img src="images/kimi.jpeg">
+                <div>
+                    <h3>KIMI</h3>
+                    <h4>6 MESES</h4><br>
+                    <h5>Pastor Belga Malinois.</h5>
+                    <h5>Activa y cariñosa.</h5>
+                </div>
+           </li>
+           <li class="pets">
+                <img src="images/nana.jpeg">
+                <div>
+                    <h3>NANA</h3>
+                    <h4>5 AÑOS</h4><br>
+                    <h5>Smoking.</h5>
+                    <h5>Vaga y gorda.</h5>
+                </div>
+           </li>
+           <li class="pets">
+                <img src="images/tita.jpeg">
+                <div>
+                    <h3>TITA</h3>
+                    <h4>4 MESES</h4><br>
+                    <h5>Bengali.</h5>
+                    <h5>Destructura de mundos.</h5>
+                </div>
+           </li>
+           <li class="pets">
+                <img src="images/mushu.jpeg">
+                <div>
+                    <h3>MUSHU</h3>
+                    <h4>1 AÑO</h4><br>
+                    <h5>Comun Europeo.</h5>
+                    <h5>El maligno.</h5>
+                </div>
+           </li>
+           <li class="pets">
+                <img src="images/dog4.jpg">
+                <div>
+                    <h3>LUNA</h3>
+                    <h4>5 AÑOS</h4><br>
+                    <h5>Pittbul.</h5>
+                    <h5>Amiga del mundo.</h5>
+                </div>
+           </li>
+        </ul>
+        <!--PARA QUE EL FORMULARIO FUNCIONE CORRECTAMENTE SE DEBE CREAR UN SERVER LOCAL CON LA EXTENCION LIVE SERVER -->
+            <div class="conteiner_contacto">
+                <h2>¿YA TE DECIDISTE?</h2><br><h3>¡PONETE EN CONTACTO!</h3>
+            <form action="https://formsubmit.co/tobiasledesma13@gmail.com" method="POST" id="miFormulario">
+                <div class="form_contacto">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="Nombre" required>
+                  </div>
+                  <div class="form_contacto">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                  </div>
+                  <div class="form_contacto">
+                    <label for="subject">Asunto</label>
+                    <input type="text" id="subject" name="Asunto" required>
+                  </div>
+                  <div class="form_contacto">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" rows="5" name="Mensaje" required></textarea>
+                  </div>
+                  <div class="captcha-container">
+                    <p class="captcha-image" id="captchaDisplay"></p>
+                    <button class="nuevo" type="button" id="generarCaptchaBtn">Generar Captcha</button><br><br>
+                    <label for="captcha">Escribe el captcha:</label>
+                    <input class="captchaInput" type="text" id="captchaInput" required>
+                </div>
+                <div id="mensajeCaptcha"></div><br>
+                <button class="submit_btn" id="submitBtn">Enviar</button>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/../adopciones.html">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+            </div>
+    
+     <button id="btn-up" class="back-to-top">
+        <img src="images/assets/arrow-up.svg">
+    </button>
+    <footer>
+        <p>© 2025 - MascoTandil</p>
+    </footer>
+    <script src="javascript/main.js"></script>
+    <script src="javascript/botones.js"></script>
+</body>
+</html>

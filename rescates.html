@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link href="css/style_rescates.css" rel="stylesheet">
+    <link href="css/style_header.css" rel="stylesheet">
+    <title>Rescates</title>
+</head>
+<body>
+    <header>
+  <div class="header_container">
+    <!-- Botón hamburguesa -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Menú de navegación -->
+    <ul class="navigation" id="nav-menu">
+      <li class="items"><a id="button_home" class="item_inicio">Inicio</a></li>
+      <li class="items"><a id="button_adopcion" class="item_adopcion">Adopcion</a></li>
+      <li class="items"><a id="button_rescates" class="item_rescates">Rescates</a></li>
+    </ul>
+  </div>
+</header>
+
+     <div class="container content_web">
+    <div class="box_biografia">
+                <div class="texto_biografia">
+                    <h2>DONACIONES</h2>
+                        <p>En Mascotandil, cada rescate es posible gracias al compromiso de personas solidarias como vos. Las donaciones nos permiten cubrir gastos fundamentales como alimentos, atención veterinaria, medicamentos, traslados y refugio para los animales que rescatamos. Muchos llegan en condiciones críticas, y sin ayuda, no podrían tener una segunda oportunidad. Cada aporte, por pequeño que parezca, suma y nos da fuerza para seguir adelante. Donar es ser parte activa del cambio, es tender una mano a quienes no tienen voz y necesitan de todos para salir adelante. Si querés ayudarnos a seguir salvando vidas, tu colaboración es más que bienvenida.</p>
+                </div>
+            </div>
+<h2>Registrar nuevo rescate</h2>
+<form id="form-rescate">
+    <input type="text" name="nombre" placeholder="Nombre" required>
+    <input type="text" name="especie" placeholder="Especie" required>
+    <input type="date" name="fechaRescate" required>
+    <input type="text" name="estado" placeholder="Estado" required>
+    <input type="text" name="ubicacion" placeholder="Ubicación" required>
+    <input type="text" name="adoptantes" placeholder="Adoptantes">
+    <button type="submit">Agregar</button>
+</form>
+
+<table id="tabla-rescates">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Especie</th>
+      <th>Fecha</th>
+      <th>Estado</th>
+      <th>Ubicación</th>
+      <th>Adoptantes</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+</div>
+    <button id="btn-up" class="back-to-top">
+        <img src="images/assets/arrow-up.svg">
+    </button>
+    <footer>
+        <p>&copy; 2025 - MascoTandil</p>
+    </footer>
+    <script src="javascript/main.js"></script>
+    <script src="javascript/botones.js"></script>
+    <script src="javascript/rescates.js"></script>
+</body>
+</html>

@@ -1,43 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- NO BORRES ESTO DE ABAJO -->
+    <!-- <link rel="shortcut icon" href="src/icons/icon.jpg" type="image/x-icon"> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
     <link href="css/style_home.css" rel="stylesheet">
     <link href="css/style_header.css" rel="stylesheet">
-    <link href="css/style_timeline_home.css" rel="stylesheet">
-    <title>Jovani Vazquez - It's My Time Out Now</title>
+    <title>MascoTandil</title>
 </head>
+
 <body>
-    <header id="header">
-        <div class="header_container">
-            <!-- Menú de navegación -->
-            <ul class="navigation">
-                <li class="item">Inicio</li>
-                <li class="item">Mi Música</li>
-                <li class="item">Tienda</li>
-            </ul>
-            <!-- Contenedor del botón -->
-            <div>
-                <!-- Botón de redirección hacia login.html -->
-                <a id="button_user" class="button_user">
-                    <img src="images/assets/user_icon.svg" alt="Icono de usuario">
-                </a>
-            </div>
-        </div>
-    </header>
+    <header>
+  <div class="header_container">
+    <!-- Botón hamburguesa -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Menú de navegación -->
+    <ul class="navigation" id="nav-menu">
+      <li class="items"><a id="button_home" class="item_inicio">Inicio</a></li>
+      <li class="items"><a id="button_adopcion" class="item_adopcion">Adopcion</a></li>
+      <li class="items"><a id="button_rescates" class="item_rescates">Rescates</a></li>
+    </ul>
+  </div>
+</header>
+
     <!-- Main Conteiner -->
     <div class="container content_web">
         <div class="container">
-            <!-- <div>
-                <input type="checkbox" id="toggle-checkbox" class="hidden-checkbox">
-                <label for="toggle-checkbox" id="toggle-label" class="hidden-label">
-                  <img src="images/assets/sun.svg" alt="Modo Claro" id="toggle-icon">
-                </label>
-            </div> -->
             <!-- Caja donde se ubica la "Presentacion de la Web" -->
             <div class="box_principal">
                 <div class="titulo_principal">
@@ -45,79 +44,59 @@
                         <span>WEB OFICIAL</span>
                     </div>
                     <div class="title_mid">
-                        <span>JOVANI VAZQUEZ</span>
+                        <span>MASCOTANDIL</span>
                     </div>
                     <div class="title_bot">
-                        <span>Escucha mi ultimo lanzamiento "Mi Motora"<img src="images/assets/arrow_down.svg"></span>
-                    </div>    
+                        <span>¿Estas buscando expandir tu familia?<img src="images/assets/arrow_down.svg"></span>
+                    </div>
                 </div>
                 <div class="vinculos_principal">
-                <span>Encuentralo en
-                <a class="vinculo_yt" target="_blank" href="https://www.youtube.com/watch?v=Ye-FzQ-wXoA">Youtube<img class="imagen_vinculo" src="images/assets/youtube_logo.svg"></a> 
-                o <a class="vinculo_sp" target="_blank" href="https://open.spotify.com/intl-es/track/7oo46cNtVatcHB6OPHu9Fj?si=136b82fa61294900&nd=1&dlsi=f3453cee572d42a2">Spotify<img class="imagen_vinculo" src="images/assets/spotify_logo.svg"></a></span>
-                </div>
-                <div class="video_principal">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ye-FzQ-wXoA?si=NK-VzCShE5yKM1U6" 
-                    title="YouTube video player" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <span>Encuentranos en
+                        <a class="vinculo_fb" target="_blank"
+                            href="https://web.facebook.com/groups/175750896280302/?locale=es_LA&_rdc=1&_rdr#">Facebook<img class="imagen_vinculo"
+                                src="images/assets/Facebook_logo.png"></a>
+                        o <a class="vinculo_ig" target="_blank"
+                            href="https://www.instagram.com/mascotandil/?hl=es">Instagram<img
+                                class="imagen_vinculo" src="images/assets/Instagram_logo.png"></a></span>
                 </div>
             </div>
-            <!-- Caja donde se ubica la "Linea del Tiempo" -->
-            <div class="box_timeline">
-                <div>
-                    <h1 class="titulo_timeline">MI HISTORIA</h1>
+            
+            <div class="box_biografia">
+                <div class="texto_biografia">
+                    <h2>ACERCA DE</h2>
+                    <p>Mascotandil es una organización sin fines de lucro con sede en Tandil, Buenos Aires, dedicada al rescate, cuidado y promoción de la adopción responsable de animales en situación de calle o abandono. Su labor incluye brindar atención veterinaria, alimentación y contención a perros y gatos rescatados, al mismo tiempo que trabajan activamente para encontrarles un hogar definitivo.
+                        <br>
+                        Además de su tarea diaria, la agrupación promueve la tenencia responsable y actúa ante situaciones de maltrato animal. 
+                        <br>
+                        En los últimos tiempos, han atravesado una compleja situación económica debido a los altos costos de tratamientos médicos, cirugías y alimentos, por lo que apelan a la colaboración solidaria de la comunidad para poder continuar con su tarea.</p>
                 </div>
-                <div class="timeline">
-                    <div class="conteiner_timeline left_conteiner_tl">
-                        <div class="text_timeline">
-                            <h2>Jovani Vazques, Quien es?</h2>
-                            <span>1985 - 2024 </span>
-                            <p><b>Jovani Vázquez</b> es un cantante puertorriqueño que actualmente tiene <b>39 años</b></p>
-                            <span class="left_conteiner_tl_arrow"></span>
-                        </div>
-                    </div>
-                    <div class="conteiner_timeline right_conteiner_tl">
-                        <div class="text_timeline">
-                            <h2>Algo que lo marcó.</h2>
-                            <span>1993</span>
-                            <p>Jovani Vázquez contó en una nota que <b>su mamá murió</b> cuando él tenía ocho años, debido a un tiroteo. El cantante explicó:
-                                “<b>Se formó un tiroteo en un callejón en Puerto Rico, y yo con mi hermano y mi hermana estábamos en el carro.
-                                La bala le dio en su cabeza, el carro chocó con otro carro y luego con una pared</b>” El mismo dice que ese suceso le marco para siempre.</p>
-                            <span class="right_conteiner_tl_arrow"></span>
-                        </div>
-                    </div>
-                    <div class="conteiner_timeline left_conteiner_tl">
-                        <div class="text_timeline">
-                            <h2>¿Donde Estudio?</h2>
-                            <span>1999 - 2006</span>
-                            <p>El comenzó su carrera musical desde que tenía 14 años: 
-                                tomó clases de canto en el <b>Conservatorio de Música de Puerto Rico</b> y estudió en la <b>Escuela Libre de Música Ernesto Ramos Antonini</b>, en San Juan.</p>
-                            <span class="left_conteiner_tl_arrow"></span>
-                        </div>
-                    </div>
-                    <div class="conteiner_timeline right_conteiner_tl">
-                        <div class="text_timeline">
-                            <h2>Idol Puerto Rico</h2>
-                            <span>2011</span>
-                            <p>Jovani Vazquez tuvo su primer salto a la fama por su participación en “<b>Idol Puerto Rico</b>” durante <b>2011</b>.</p>
-                            <span class="right_conteiner_tl_arrow"></span>
-                        </div>
-                    </div>
-                    <div class="conteiner_timeline left_conteiner_tl">
-                        <div class="text_timeline">
-                            <h2>Su salto a la Musica</h2>
-                            <span>2020 - 2024</span>
-                            <p>En 2020 lanzó su álbum, <b>It’s My Time</b>, pero se volvió viral en países de habla hispana en los últimos meses por sus cómicas canciones. 
-                                Lo que logro que hoy en dia en su cuenta de <b>Instagram</b> tenga más de <b>456.000 seguidores</b> y en <b>TikTok</b> más de <b>14 millones de likes</b>.</p>
-                            <span class="left_conteiner_tl_arrow"></span>
-                        </div>
-                    </div>
+                <div class="imagen_biografia">
+                    <img src="images/gatoperro.png" alt="Mascotas">
                 </div>
+            </div>
+            <div class="box_biografia">
+                <div class="imagen_biografia">
+                    <img src="images/rescate.png" alt="Mascotas">
+                </div>
+                <div class="texto_biografia">
+                    <h2>RESCATES</h2><br>
+                    <p>Los rescates de Mascotandil no solo salvan la vida de animales en situación de abandono o maltrato, sino que también transforman profundamente la de las personas que los adoptan. Cada rescate representa una segunda oportunidad, no solo para los perros y gatos que encuentran un hogar, sino también para quienes descubren en ellos un compañero fiel, amor incondicional y una nueva forma de ver la vida. <br>
+                        A través del trabajo comprometido de Mascotandil, se generan historias de esperanza, ternura y superación que demuestran que el vínculo entre humanos y animales puede sanar heridas y crear lazos que duran para siempre.</p>
+                    <br>
+                    </div>
+                
             </div>
         </div>
     </div>
-    <footer></footer>
-<script src="javascript/home.js"></script>
+    <button id="btn-up" class="back-to-top">
+        <img src="images/assets/arrow-up.svg">
+    </button>
+    <footer>
+        <p>&copy; 2025 - MascoTandil</p>
+    </footer>
+    <script src="javascript/main.js"></script>
+    <script src="javascript/botones.js"></script>
 </body>
+
 </html>
+
